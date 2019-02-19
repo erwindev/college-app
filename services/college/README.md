@@ -1,6 +1,6 @@
 # College Microservice
 
-This is microservice is the application that deals with college information.  
+This microservice deals with college information.  
 
 # Setup
 
