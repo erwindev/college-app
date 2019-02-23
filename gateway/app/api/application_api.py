@@ -13,3 +13,5 @@ api = Api(apiv1, version=version, title='{} API'.format(service_name),
           default_label="{} v{}".format(service_name, version))
 
 utility_ns = api.namespace('utility', 'Utility methods')
+college_ns = api.namespace('college', 'College methods')
+student_ns = api.namespace('student', 'Student methods')

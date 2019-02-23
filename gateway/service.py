@@ -3,6 +3,8 @@ import os
 from app import create_app
 from flask_script import Manager
 from app.api.utility import api as utility_ns
+from app.api.college import api as college_ns
+from app.api.student import api as student_ns
 
 app = create_app(os.getenv('ENV_CONFIG') or 'default')
 app.register_blueprint(apiv1)

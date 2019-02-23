@@ -1,6 +1,6 @@
-# College Microservice
+# Student Microservice
 
-This microservice deals with college information.  
+This microservice deals with student information.  
 
 # Setup
 
@@ -38,3 +38,6 @@ $ sh run.sh
 $ alembic revision --autogenerate -m "add created and updated date"
 $ alembic update head
 ```
+
+
+
