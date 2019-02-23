@@ -6,6 +6,7 @@ from datetime import datetime
 from nameko_sqlalchemy import DatabaseSession
 from app.model import TempTable, DeclarativeBase
 
+
 class CollegeService:
 
     name = 'college_service'
@@ -16,14 +17,14 @@ class CollegeService:
         return 'alive'
 
     @rpc
-    def process(self):
+    def process(self, name):
         id = str(uuid.uuid4())
         temp_data = TempTable()
-        temp_data.name = 'Erwin Alberto - {}'.format(id)
+        temp_data.name = name
         temp_data.id = id
 
         self.db.add(temp_data)
         self.db.commit()
         temp_datax = self.db.query(TempTable).filter_by(id=id).first()
 
-        return 'I JUST RAN THIS PROCESS FOR {}'.format(temp_datax.name)
+        return temp_datax.name
