@@ -36,5 +36,5 @@ $ sh run.sh
 * Run database migration - this will update or create new tables
 ```
 $ alembic revision --autogenerate -m "add created and updated date"
-$ alembic update head
+$ alembic upgrade head
 ```
