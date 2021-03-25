@@ -28,7 +28,7 @@ path.py==11.5.0
 pbr==5.1.2
 pylint==2.2.2
 pytz==2018.9
-PyYAML==3.13
+PyYAML==5.4
 requests==2.21.0
 six==1.12.0
 urllib3==1.24.1
