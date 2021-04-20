@@ -27,7 +27,7 @@ pbr==5.1.2
 pg8000==1.13.1
 pluggy==0.8.1
 psycopg2==2.7.7
-py==1.8.0
+py==1.10.0
 pylint==2.2.2
 pytest==4.3.0
 python-dateutil==2.8.0
